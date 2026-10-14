@@ -1,0 +1,13 @@
+{
+  "name": "taskmasterapp",
+  "version": "1.0.0",
+  "description": "webapp for tracking tasks and their state",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Emil Bredahl Larssen",
+  "license": "ISC",
+  "type": "commonjs"
+}
