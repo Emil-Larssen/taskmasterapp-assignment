@@ -1,5 +1,3 @@
-//TODO deleteTask(id)
-
 const fs = require('node:fs/promises');
 const path = require('node:path');
 
@@ -17,4 +15,11 @@ async function getAllTasks() {
     return JSON.parse(fileContent);
 }
 
-module.exports = { saveTask, getAllTasks };
+async function deleteTask(id) {
+    const fileContent = await fs.readFile(filePath, 'utf-8');
+    const tasks = JSON.parse(fileContent);
+    const updatedTasks = tasks.filter(task => task.id !== id);
+    await fs.writeFile(filePath, JSON.stringify(updatedTasks, null, 2));
+}
+
+module.exports = { saveTask, getAllTasks, deleteTask };
