@@ -18,7 +18,7 @@ router.post('/api/tasks', async (req, res) => {
     try{
         const task = createTask(req.body.text);
         await saveTask(task);
-        res.status(201);
+        res.sendStatus(201);
     } catch(error){
         res.status(500).json({message: error.message});
     }

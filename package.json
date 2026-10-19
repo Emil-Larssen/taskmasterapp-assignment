@@ -4,7 +4,6 @@
   "description": "webapp for tracking tasks and their state",
   "main": "src/server.js",
   "scripts": {
-    "test": "node src/test.js",
     "start": "node src/server.js"
   },
   "keywords": [],

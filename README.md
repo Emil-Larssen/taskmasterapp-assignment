@@ -1,0 +1,1 @@
+start serveren med 'npm start' i terminalen og tilgå på localhost:3000
